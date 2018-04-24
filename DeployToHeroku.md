@@ -19,6 +19,11 @@
 
 8. 用浏览器访问你的应用网页地址测试是否部署成功  
 
+## icepyb @ 20180425
+## https://stackoverflow.com/questions/2792650/import-error-no-module-name-urllib2
+## heroku默认不支持urllib2，要改为 import urllib.request as urllib2，怀疑为python 3了不自带urllib2
+
+
 ##标准步骤(使用Heroku工具套件)  
 1. 安装git (针对没有git的机器)  
 `sudo apt-get install git`   
