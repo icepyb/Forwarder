@@ -15,4 +15,4 @@
 如果你要新增其他需要转发器的书籍，代码样例参照 [KindleEar](https://github.com/cdhigh/KindleEar) 项目的 books/[ZhihuDaily.py](https://github.com/cdhigh/KindleEar/blob/master/books/ZhihuDaily.py) (知乎日报)
 
 #部署到Heroku步骤(不需要安装任何软件，可以在几分钟之内部署成功)：
-参见 [DeployToHeroku.md](https://github.com/icepyb/iceForwarder/blob/master/DeployToHeroku.md)
+参见 [DeployToHeroku.md](https://github.com/icepyb/Forwarder/blob/master/DeployToHeroku.md)
