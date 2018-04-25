@@ -14,8 +14,9 @@ __Version__ = "1.2.4"
 __Author__ = "cdhigh <https://github.com/cdhigh>"
 
 from wsgiref.util import is_hop_by_hop
-import os, urllib, socket, bottle #urllib2,
-import urllib.request as urllib2
+import os, urllib, socket, bottle 
+import urllib2 #python 2.x
+## import urllib.request as urllib2 #python 3.x
 
 ALLOW_KEYS = '123456'
 
@@ -30,7 +31,8 @@ def Home():
         return 'Auth Key is invalid!'
     
     if url and k:
-        url = urllib.parse.unquote(url.encode('utf-8')).replace(' ', r'%20')
+        ## url = urllib.parse.unquote(url.encode('utf-8')).replace(' ', r'%20') #python 3.x
+        url = urllib.unquote(url.encode('utf-8')).replace(' ', r'%20')
         try:
             req = urllib2.Request(url)
             req.add_header('User-Agent', "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)")
